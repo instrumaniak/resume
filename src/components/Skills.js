@@ -53,7 +53,7 @@ const Skills = () => (
       name="Backend"
       skills={[
         'Express/Node.js',
-        'Mongoose/MongoBD',
+        'Mongoose/MongoDB',
         'Next.js',
         'Gatsby.js'
       ]}

@@ -111,7 +111,7 @@ const projectsData = [
     url: 'https://github.com/instrumaniak/wikiSearch',
     tech: 'React Native, React Navigation',
     details: [
-      `A little mobile app to search Wikipedia using it's public search API.`
+      `A mobile app to search Wikipedia using it's public search API.`
     ]
   }
 ];

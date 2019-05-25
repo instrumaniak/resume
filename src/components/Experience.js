@@ -58,13 +58,14 @@ const styles = StyleSheet.create({
   },
 });
 
-const ExperienceEntry = ({ company, details, position, date }) => {
+const ExperienceEntry = ({ company, location, details, position, date }) => {
   const title = `${company} | ${position}`;
   return (
     <View style={styles.entryContainer}>
       <View style={styles.headerContainer}>
         <View style={styles.leftColumn}>
           <Text style={styles.title}>{title}</Text>
+          <Text style={styles.date}>{location}</Text>
         </View>
         <View style={styles.rightColumn}>
           <Text style={styles.date}>{date}</Text>
@@ -84,15 +85,17 @@ const ExperienceEntry = ({ company, details, position, date }) => {
 const experienceData = [
   {
     company: 'HiFi Digital Ltd.',
+    location: 'Dhaka, Bangladesh',
     date: 'Jully, 2018 - Present',
     details: [
-      `Ported the React/Redux frontend of their news/media/blog site (https://www.hifipublic.com) to NextJS/React for full server side rendering with caching support in the Express/Node.js & improved SEO. Deployed it to AWS EC2. `,
+      `Ported the React/Redux frontend of their news/media/blog site (https://hifipublic.com) to NextJS/React for full server side rendering with caching support in the Express/Node.js & improved SEO. Deployed it to AWS EC2.`,
       `Worked on some of their client's projects using these tech: React, Redux, React Native, Express, Node.js`
     ],
     position: 'Software Engineer',
   },
   {
     company: 'HiFi Digital Ltd.',
+    location: 'Dhaka, Bangladesh',
     date: 'April - June, 2018',
     details: [
       `Ported their news/media/blog site (https://hifipublic.com) front end which was in Angular to React/Redux while keeping the old design the same.`,
@@ -105,9 +108,10 @@ const experienceData = [
 const Experience = () => (
   <View style={styles.container}>
     <Title>Experience</Title>
-    {experienceData.map(({ company, date, details, position }) => (
+    {experienceData.map(({ company, location, date, details, position }) => (
       <ExperienceEntry
         company={company}
+        location={location}
         date={date}
         details={details}
         key={company + position}
