@@ -1,0 +1,17 @@
+{
+  "headers": [
+    {
+      "source" : "**/*.ttf",
+      "headers" : [{
+        "key" : "Access-Control-Allow-Origin",
+        "value" : "*"
+      }]
+    }, {
+      "source" : "**/*.ttf",
+      "headers" : [{
+        "key" : "Access-Control-Allow-Headers",
+        "value" : "Origin, X-Requested-With, Content-Type, Accept"
+      }]
+    }
+  ]
+}
