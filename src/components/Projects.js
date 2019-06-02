@@ -118,7 +118,7 @@ const projectsData = [
 
 const Projects = () => (
   <View style={styles.container}>
-    <Title>Selected Projects</Title>
+    <Title>Selected Personal Projects</Title>
     {projectsData.map(({ title, url, tech, details }) => (
       <ProjectEntry
         title={title}

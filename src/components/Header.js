@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     borderBottomWidth: 0.5,
-    borderBottomColor: 'black',
+    borderBottomColor: 'darkgrey',
     borderBottomStyle: 'solid',
     alignItems: 'stretch',
     paddingBottom: 10

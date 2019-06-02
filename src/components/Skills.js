@@ -44,9 +44,9 @@ const Skills = () => (
       name="Frontend"
       skills={[
         'HTML5/CSS3/SCSS',
-        'Bootstrap',
+        'Bootstrap/Ant Design',
         'Modern JS/ES6+',
-        'React/Redux'
+        'React/React Router/Redux'
       ]}
     />
     <SkillEntry

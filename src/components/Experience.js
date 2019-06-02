@@ -56,15 +56,50 @@ const styles = StyleSheet.create({
     textDecoration: 'none',
     fontFamily: 'Lato Bold',
   },
+
+  companyPositionsContainer: {
+    marginTop: 5,
+    marginLeft: 2,
+    paddingLeft: 8,
+    paddingTop: 5,
+    borderLeftWidth: 1,
+    borderLeftColor: 'darkgrey',
+  },
+  companyTitle: {
+    fontSize: 12,
+    color: 'black',
+    fontFamily: 'Lato Bold'
+  }
 });
 
-const ExperienceEntry = ({ company, location, details, position, date }) => {
-  const title = `${company} | ${position}`;
+const CompanyEntry = ({ company, location, positions }) => {
   return (
-    <View style={styles.entryContainer}>
+    <View style={styles.companyContainer}>
+      <Text style={styles.companyTitle}>{ company }</Text>
+      <View style={styles.companyPositionsContainer}>
+      { positions.map((position, idx) => (
+          <ExperienceEntry
+            company={company}
+            location={location}
+            date={position.date}
+            details={position.details}
+            position={position.title}
+            key={idx}
+            isLast={positions.length - 1 === idx}
+          />
+      ))}
+      </View>
+    </View>
+  )
+}
+
+const ExperienceEntry = ({ company, location, details, position, date, isLast }) => {
+  
+  return (
+    <View style={[styles.entryContainer, isLast ? { marginBottom: 0 } : {}]}>
       <View style={styles.headerContainer}>
         <View style={styles.leftColumn}>
-          <Text style={styles.title}>{title}</Text>
+          <Text style={styles.title}>{position}</Text>
           <Text style={styles.date}>{location}</Text>
         </View>
         <View style={styles.rightColumn}>
@@ -86,36 +121,37 @@ const experienceData = [
   {
     company: 'HiFi Digital Ltd.',
     location: 'Dhaka, Bangladesh',
-    date: 'Jully, 2018 - Present',
-    details: [
-      `Ported the React/Redux frontend of their news/media/blog site (https://hifipublic.com) to NextJS/React for full server side rendering with caching support in the Express/Node.js & improved SEO. Deployed it to AWS EC2.`,
-      `Worked on some of their client's projects using these tech: React, Redux, React Native, Express, Node.js`
-    ],
-    position: 'Software Engineer',
-  },
-  {
-    company: 'HiFi Digital Ltd.',
-    location: 'Dhaka, Bangladesh',
-    date: 'April - June, 2018',
-    details: [
-      `Ported their news/media/blog site (https://hifipublic.com) front end which was in Angular to React/Redux while keeping the old design the same.`,
-      `Deployed the site on Amazon AWS EC2. Implemented dynamic meta data rendering from server side using Express/Node.js which was required for social media sharing.`
-    ],
-    position: 'Apprentice',
-  },
-];
+    
+    positions: [
+      {
+        title: 'Software Engineer',
+        date: 'Jully, 2018 - Present', 
+        details: [
+          `Ported the React/Redux frontend of their news/media/blog site (https://hifipublic.com) to NextJS/React for full server side rendering with caching support in the Express/Node.js & improved SEO. Deployed it to AWS EC2.`,
+          `Worked on some of their client's projects using these tech: React, Redux, React Native, Express, Node.js`
+        ]
+      },
+      {
+        title: 'Apprentice Software Engineer',
+        date: 'April - June, 2018',
+        details: [
+          `Ported their news/media/blog site (https://hifipublic.com) front end which was in Angular to React/Redux while keeping the old design the same.`,
+          `Deployed the site on Amazon AWS EC2. Implemented dynamic meta data rendering from server side using Express/Node.js which was required for social media sharing.`
+        ]
+      }
+    ]
+  }
+]
 
 const Experience = () => (
   <View style={styles.container}>
-    <Title>Experience</Title>
-    {experienceData.map(({ company, location, date, details, position }) => (
-      <ExperienceEntry
+    <Title>Work Experience</Title>
+    {experienceData.map(({ company, location, positions }) => (
+      <CompanyEntry
         company={company}
         location={location}
-        date={date}
-        details={details}
-        key={company + position}
-        position={position}
+        positions={positions}
+        key={company + location}
       />
     ))}
   </View>
