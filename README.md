@@ -1,9 +1,14 @@
-# Resume
+# Resume of Raziur Rahman
 
 This project uses `react-pdf` to generate PDF.
 
-This code is based on the resume example of `react-pdf`.
+This code is based on the [resume example](https://github.com/diegomura/react-pdf/tree/master/examples/resume/) of `react-pdf`.
 
 ## Setup
 
-You have to run the `serve` command from the fonts directory for serving fonts.
+Install the dependencies and start the development server:
+
+```bash
+yarn
+yarn start
+```

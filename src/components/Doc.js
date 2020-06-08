@@ -46,23 +46,23 @@ const styles = StyleSheet.create({
 
 Font.register({
   family: 'Open Sans',
-  src: `http://localhost:5000/Open_Sans/OpenSans-Regular.ttf`
+  src: `/fonts/Open_Sans/OpenSans-Regular.ttf`
 })
 Font.register({
   family: 'Lato',
-  src: `http://localhost:5000/Lato/Lato-Regular.ttf`
+  src: `/fonts/Lato/Lato-Regular.ttf`
 })
 Font.register({
   family: 'Lato Italic',
-  src: `http://localhost:5000/Lato/Lato-Italic.ttf`
+  src: `/fonts/Lato/Lato-Italic.ttf`
 })
 Font.register({
   family: 'Lato Bold',
-  src: `http://localhost:5000/Lato/Lato-Bold.ttf`
+  src: `/fonts/Lato/Lato-Bold.ttf`
 })
 Font.register({
   family: 'Lato Light',
-  src: `http://localhost:5000/Lato/Lato-Light.ttf`
+  src: `/fonts/Lato/Lato-Light.ttf`
 })
 
 
