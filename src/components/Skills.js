@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 
-import Title from './Title';
-import List, { Item } from './List';
+import Title from './Title'
+import List, { Item } from './List'
 import { Text, View, StyleSheet } from '@react-pdf/renderer'
 
 const styles = StyleSheet.create({
@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     backgroundColor: '#f5f5f5',
     paddingLeft: 10,
-    paddingTop: 10
+    paddingTop: 10,
   },
   title: {
     fontFamily: 'Lato Bold',
@@ -17,14 +17,14 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   skillEntry: {
-    marginBottom: 10
+    marginBottom: 10,
   },
   skills: {
     fontFamily: 'Lato',
     fontSize: 10,
     marginBottom: 10,
   },
-});
+})
 
 const SkillEntry = ({ name, skills }) => (
   <View style={styles.skillEntry}>
@@ -35,45 +35,22 @@ const SkillEntry = ({ name, skills }) => (
       ))}
     </List>
   </View>
-);
+)
 
 const Skills = () => (
   <View style={styles.container}>
     <Title>Tech Skills</Title>
     <SkillEntry
       name="Frontend"
-      skills={[
-        'HTML5/CSS3/SCSS',
-        'Bootstrap/Ant Design',
-        'Modern JS/ES6+',
-        'React/React Router/Redux'
-      ]}
+      skills={['HTML5/CSS3', 'Modern JS/ES6+', 'React/React Router/Redux']}
     />
-    <SkillEntry
-      name="Backend"
-      skills={[
-        'Express/Node.js',
-        'Mongoose/MongoDB',
-        'Next.js',
-        'Gatsby.js'
-      ]}
-    />
-    <SkillEntry
-      name="Mobile"
-      skills={[
-        'React Native'
-      ]}
-    />
+    <SkillEntry name="Backend" skills={['Node.js/Express', 'MongoDB/MySQL']} />
+    <SkillEntry name="Mobile" skills={['React Native']} />
     <SkillEntry
       name="Others"
-      skills={[
-        'Git/Bitbucket/Github',
-        'Linux/Ubuntu',
-        'AWS EC2/S3',
-        'Heroku'
-      ]}
+      skills={['Git/Bitbucket/Github', 'Linux/Ubuntu', 'AWS(EC2/S3)/Heroku']}
     />
   </View>
-);
+)
 
-export default Skills;
+export default Skills

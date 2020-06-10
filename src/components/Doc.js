@@ -18,55 +18,54 @@ import Projects from './Projects'
 
 const styles = StyleSheet.create({
   page: {
-    paddingTop: 30,
-    paddingHorizontal: 30,
-    paddingBottom: 5
+    paddingTop: 35,
+    paddingHorizontal: 35,
+    paddingBottom: 5,
   },
   container: {
     flex: 1,
-    flexDirection: 'row'
+    flexDirection: 'row',
   },
   leftColumn: {
     flexDirection: 'column',
     width: 180,
     paddingTop: 30,
-    paddingRight: 15
+    paddingRight: 15,
   },
   rightColumn: {
     flexDirection: 'column',
-    flex: 1
+    flex: 1,
   },
   footer: {
     fontSize: 8,
     fontFamily: 'Lato Italic',
     textAlign: 'center',
-    color: '#666'
-  }
+    color: '#666',
+  },
 })
 
 Font.register({
   family: 'Open Sans',
-  src: `/fonts/Open_Sans/OpenSans-Regular.ttf`
+  src: `/fonts/Open_Sans/OpenSans-Regular.ttf`,
 })
 Font.register({
   family: 'Lato',
-  src: `/fonts/Lato/Lato-Regular.ttf`
+  src: `/fonts/Lato/Lato-Regular.ttf`,
 })
 Font.register({
   family: 'Lato Italic',
-  src: `/fonts/Lato/Lato-Italic.ttf`
+  src: `/fonts/Lato/Lato-Italic.ttf`,
 })
 Font.register({
   family: 'Lato Bold',
-  src: `/fonts/Lato/Lato-Bold.ttf`
+  src: `/fonts/Lato/Lato-Bold.ttf`,
 })
 Font.register({
   family: 'Lato Light',
-  src: `/fonts/Lato/Lato-Light.ttf`
+  src: `/fonts/Lato/Lato-Light.ttf`,
 })
 
-
-const Resume = props => (
+const Resume = (props) => (
   <Page {...props} style={styles.page}>
     <Header />
     <View style={styles.container}>
@@ -79,7 +78,10 @@ const Resume = props => (
         <Projects />
       </View>
     </View>
-    <Text style={styles.footer}>This resume was made using JavaScript, React & React PDF! Source: <Link>http://github.com/instrumaniak/resume</Link></Text>
+    <Text style={styles.footer}>
+      This resume was made using JavaScript, React & React PDF! Source:{' '}
+      <Link>http://github.com/instrumaniak/resume</Link>
+    </Text>
   </Page>
 )
 

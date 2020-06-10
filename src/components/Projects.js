@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 
-import Title from './Title';
-import List, { Item } from './List';
+import Title from './Title'
+import List, { Item } from './List'
 import { Text, View, StyleSheet, Link } from '@react-pdf/renderer'
 
 const styles = StyleSheet.create({
@@ -11,12 +11,12 @@ const styles = StyleSheet.create({
     paddingLeft: 15,
   },
   entryContainer: {
-    marginBottom: 10,
+    marginBottom: 2.5,
   },
   url: {
     fontSize: 11,
     fontFamily: 'Lato Italic',
-    marginBottom: 5
+    marginBottom: 5,
   },
   detailContainer: {
     flexDirection: 'row',
@@ -61,8 +61,8 @@ const styles = StyleSheet.create({
     fontSize: 10,
     fontFamily: 'Lato Italic',
     //marginBottom: 10,
-  }
-});
+  },
+})
 
 const ProjectEntry = ({ title, tech, details, url }) => {
   return (
@@ -74,8 +74,7 @@ const ProjectEntry = ({ title, tech, details, url }) => {
             <Text style={styles.tech}> | {tech}</Text>
           </Text>
         </View>
-        <View style={styles.rightColumn}>
-        </View>
+        <View style={styles.rightColumn}></View>
       </View>
       <Link style={styles.url}>{url}</Link>
       <List>
@@ -86,35 +85,39 @@ const ProjectEntry = ({ title, tech, details, url }) => {
         ))}
       </List>
     </View>
-  );
-};
+  )
+}
 
 const projectsData = [
   {
     title: 'Personal website/Blog',
     url: 'https://github.com/instrumaniak/instrumaniak.github.io',
-    tech: 'Gatsby.js, React, GraphQL',
+    tech: 'Gatsby.js, Node.js, React, GraphQL',
     details: [
       'A static site that uses markdown files for posts & hosted on github pages.',
-    ]
+    ],
   },
   {
     title: 'Local Library',
     url: 'https://github.com/instrumaniak/local-library',
     tech: 'React, Express, Mongoose, MongoDB',
-    details: [
-      'Book management web app for small libraries'
-    ]
+    details: ['Book management web app for small libraries'],
+  },
+  {
+    title: 'Calendar',
+    url: 'https://github.com/instrumaniak/calendar',
+    tech: 'React, Express, Mongoose, MongoDB',
+    details: ['A minimalist calendar app for managing events.'],
   },
   {
     title: 'WikiSearch',
     url: 'https://github.com/instrumaniak/wikiSearch',
     tech: 'React Native, React Navigation',
     details: [
-      `A mobile app to search Wikipedia using it's public search API.`
-    ]
-  }
-];
+      `A simple mobile app to search Wikipedia using it's public search API.`,
+    ],
+  },
+]
 
 const Projects = () => (
   <View style={styles.container}>
@@ -129,6 +132,6 @@ const Projects = () => (
       />
     ))}
   </View>
-);
+)
 
-export default Projects;
+export default Projects
