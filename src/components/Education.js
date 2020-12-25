@@ -1,8 +1,8 @@
-import React from 'react';
-
+import React from 'react'
 import { Text, View, StyleSheet } from '@react-pdf/renderer'
 
-import Title from './Title';
+import Title from './Title'
+import { educationData } from '../data'
 
 const styles = StyleSheet.create({
   container: {
@@ -22,13 +22,17 @@ const styles = StyleSheet.create({
     fontFamily: 'Lato Italic',
     fontSize: 10,
   },
-});
+})
 
 export default () => (
   <View style={styles.container}>
     <Title>Formal Education</Title>
-    <Text style={styles.degree}>Electrical and Electronic Engineering</Text>
-    <Text style={styles.school}>Ahsanullah University of Science and Technology, Dhaka, Bangladesh</Text>
-    <Text style={styles.candidate}>BSc | 2009</Text>
+    {educationData.map(({ degree, school, duration }) => (
+      <>
+        <Text style={styles.degree}>{degree}</Text>
+        <Text style={styles.school}>{school}</Text>
+        <Text style={styles.candidate}>{duration}</Text>
+      </>
+    ))}
   </View>
-);
+)

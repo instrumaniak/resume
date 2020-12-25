@@ -3,10 +3,10 @@ import React from 'react'
 import Title from './Title'
 import List, { Item } from './List'
 import { Text, View, StyleSheet, Link } from '@react-pdf/renderer'
+import { projectsData } from '../data'
 
 const styles = StyleSheet.create({
   container: {
-    //flex: 1,
     paddingTop: 20,
     paddingLeft: 15,
   },
@@ -60,7 +60,6 @@ const styles = StyleSheet.create({
   tech: {
     fontSize: 10,
     fontFamily: 'Lato Italic',
-    //marginBottom: 10,
   },
 })
 
@@ -87,37 +86,6 @@ const ProjectEntry = ({ title, tech, details, url }) => {
     </View>
   )
 }
-
-const projectsData = [
-  {
-    title: 'Personal website/Blog',
-    url: 'https://github.com/instrumaniak/instrumaniak.github.io',
-    tech: 'Gatsby.js, Node.js, React, GraphQL',
-    details: [
-      'A static site that uses markdown files for posts & hosted on github pages.',
-    ],
-  },
-  {
-    title: 'Local Library',
-    url: 'https://github.com/instrumaniak/local-library',
-    tech: 'React, Express, Mongoose, MongoDB',
-    details: ['Book management web app for small libraries'],
-  },
-  {
-    title: 'Calendar',
-    url: 'https://github.com/instrumaniak/calendar',
-    tech: 'React, Express, Mongoose, MongoDB',
-    details: ['A minimalist calendar app for managing events.'],
-  },
-  {
-    title: 'WikiSearch',
-    url: 'https://github.com/instrumaniak/wikiSearch',
-    tech: 'React Native, React Navigation',
-    details: [
-      `A simple mobile app to search Wikipedia using it's public search API.`,
-    ],
-  },
-]
 
 const Projects = () => (
   <View style={styles.container}>

@@ -1,8 +1,9 @@
 import React from 'react'
+import { Text, View, StyleSheet } from '@react-pdf/renderer'
 
 import Title from './Title'
 import List, { Item } from './List'
-import { Text, View, StyleSheet } from '@react-pdf/renderer'
+import { techSkillsData } from '../data'
 
 const styles = StyleSheet.create({
   container: {
@@ -40,16 +41,9 @@ const SkillEntry = ({ name, skills }) => (
 const Skills = () => (
   <View style={styles.container}>
     <Title>Tech Skills</Title>
-    <SkillEntry
-      name="Frontend"
-      skills={['HTML5/CSS3', 'Modern JS/ES6+', 'React/React Router/Redux']}
-    />
-    <SkillEntry name="Backend" skills={['Node.js/Express', 'MongoDB/MySQL']} />
-    <SkillEntry name="Mobile" skills={['React Native']} />
-    <SkillEntry
-      name="Others"
-      skills={['Git/Bitbucket/Github', 'Linux/Ubuntu', 'AWS(EC2/S3)/Heroku']}
-    />
+    {techSkillsData.map((data) => (
+      <SkillEntry name={data.category} skills={data.skills} />
+    ))}
   </View>
 )
 
