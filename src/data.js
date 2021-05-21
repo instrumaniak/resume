@@ -6,6 +6,7 @@ export const headerData = {
     'raziur.eee@gmail.com',
     'Dhaka, Bangladesh',
     ' ',
+    'https://www.linkedin.com/in/raziur',
     'https://instrumaniak.github.io',
     'https://github.com/instrumaniak',
   ],
