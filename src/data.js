@@ -53,7 +53,7 @@ export const experienceData = [
     positions: [
       {
         title: 'Software Engineer',
-        date: 'August, 2019 - Present',
+        date: 'August, 2019 - June, 2021',
         details: [
           `Working on an E-Commerce project frontend based on Saleor (TypeScript/React/GraphQL/Django/Keycloak)`,
           `Built complex single page web application frontend (fuel tax calculations, reports, data visualization & others). Overall Tech stack: TypeScript, React with hooks, Redux, React Router, Material UI, React Final Form, React-PDF, React-Intl.`,
