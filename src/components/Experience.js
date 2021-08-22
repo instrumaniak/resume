@@ -63,23 +63,34 @@ const styles = StyleSheet.create({
     paddingLeft: 8,
     paddingTop: 5,
   },
-  companyTitle: {
-    fontSize: 12,
-    color: 'black',
-    fontFamily: 'Lato Bold',
+  companyTitleContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
     borderBottomWidth: 0.5,
     borderBottomColor: 'darkgrey',
     paddingBottom: 5,
   },
+  companyTitle: {
+    fontSize: 12,
+    color: 'black',
+    fontFamily: 'Lato Bold',
+  },
+  totalDuration: {
+    fontSize: 12,
+    fontFamily: 'Lato Italic',
+  },
 })
 
-const CompanyEntry = ({ company, location, positions }) => {
+const CompanyEntry = ({ company, location, totalDuration, positions }) => {
   return (
     <View style={styles.companyContainer}>
-      <Text style={styles.companyTitle}>
-        {company} {`  `}
-        <Text style={styles.date}>{location}</Text>
-      </Text>
+      <View style={styles.companyTitleContainer}>
+        <Text style={styles.companyTitle}>
+          {company} {`  `}
+          <Text style={styles.date}>{location}</Text>
+        </Text>
+        <Text style={styles.totalDuration}> {totalDuration}</Text>
+      </View>
       <View style={styles.companyPositionsContainer}>
         {positions.map((position, idx) => (
           <ExperienceEntry
@@ -130,19 +141,22 @@ const ExperienceEntry = ({
 const Experience = () => (
   <View style={styles.container}>
     <Title>Work Experience</Title>
-    {experienceData.map(({ company, location, positions }, idx) => (
-      <View
-        style={experienceData.length - 1 === idx ? {} : { marginBottom: 10 }}
-        key={idx}
-      >
-        <CompanyEntry
-          company={company}
-          location={location}
-          positions={positions}
-          key={company + location}
-        />
-      </View>
-    ))}
+    {experienceData.map(
+      ({ company, location, totalDuration, positions }, idx) => (
+        <View
+          style={experienceData.length - 1 === idx ? {} : { marginBottom: 10 }}
+          key={idx}
+        >
+          <CompanyEntry
+            company={company}
+            location={location}
+            positions={positions}
+            totalDuration={totalDuration}
+            key={company + location}
+          />
+        </View>
+      )
+    )}
   </View>
 )
 

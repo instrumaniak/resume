@@ -14,26 +14,19 @@ export const headerData = {
 
 export const techSkillsData = [
   {
-    category: 'Frontend',
+    category: '',
     skills: [
       'HTML5/CSS3',
       'Modern JS/ES6+',
       'TypeScript',
-      'React/React Router/Redux',
+      'React/Redux',
+      'React Native',
       'GraphQL',
+      'Node.js/Express/NestJS',
+      'MongoDB/PostgreSQL',
+      'Git',
+      'Linux/Ubuntu',
     ],
-  },
-  {
-    category: 'Backend',
-    skills: ['Node.js/Express/NestJS', 'MongoDB/PostgreSQL'],
-  },
-  {
-    category: 'Mobile',
-    skills: ['React Native'],
-  },
-  {
-    category: 'Others',
-    skills: ['Git', 'Linux/Ubuntu', 'AWS(EC2/S3)/Heroku'],
   },
 ]
 
@@ -49,14 +42,16 @@ export const experienceData = [
   {
     company: 'Nascenia Ltd.',
     location: 'Dhaka, Bangladesh',
-
+    totalDuration: '1 year, 11 months',
     positions: [
       {
         title: 'Software Engineer',
         date: 'August, 2019 - June, 2021',
         details: [
-          `Working on an E-Commerce project frontend based on Saleor (TypeScript/React/GraphQL/Django/Keycloak)`,
+          `Worked on an E-Commerce project frontend based on Saleor (TypeScript/React/GraphQL/Django/Keycloak)`,
           `Built complex single page web application frontend (fuel tax calculations, reports, data visualization & others). Overall Tech stack: TypeScript, React with hooks, Redux, React Router, Material UI, React Final Form, React-PDF, React-Intl.`,
+          `Mentored interns & developers from different backgrounds in React, JavaScript, TypeScript`,
+          `Worked on various other projects frontend parts for bug fixing/feature development`,
         ],
       },
     ],
@@ -64,7 +59,7 @@ export const experienceData = [
   {
     company: 'HiFi Digital Ltd.',
     location: 'Dhaka, Bangladesh',
-
+    totalDuration: '1 year, 4 months',
     positions: [
       {
         title: 'Software Engineer',
@@ -87,14 +82,6 @@ export const experienceData = [
 
 export const projectsData = [
   {
-    title: 'Personal website/Blog',
-    url: 'https://github.com/instrumaniak/instrumaniak.github.io',
-    tech: 'Gatsby.js, Node.js, React, GraphQL',
-    details: [
-      'A static blog site that uses markdown files for posts & hosted on github pages.',
-    ],
-  },
-  {
     title: 'Local Library',
     url: 'https://github.com/instrumaniak/local-library',
     tech: 'React, Express, Mongoose, MongoDB',
@@ -107,9 +94,11 @@ export const projectsData = [
     details: ['A calendar web app for managing events.'],
   },
   {
-    title: 'WikiSearch',
-    url: 'https://github.com/instrumaniak/wikiSearch',
-    tech: 'React Native, React Navigation.',
-    details: [`A mobile app to search Wikipedia using it's public search API.`],
+    title: 'Personal website/Blog',
+    url: 'https://github.com/instrumaniak/instrumaniak.github.io',
+    tech: 'Gatsby.js, Node.js, React, GraphQL',
+    details: [
+      'A static blog site that uses markdown files for posts & hosted on github pages.',
+    ],
   },
 ]
