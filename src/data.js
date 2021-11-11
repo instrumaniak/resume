@@ -40,6 +40,20 @@ export const educationData = [
 
 export const experienceData = [
   {
+    company: 'Silicon Orchard Ltd.',
+    location: 'Dhaka, Bangladesh',
+    totalDuration: '',
+    positions: [
+      {
+        title: 'Software Engineer',
+        date: 'September, 2021 - Present',
+        details: [
+          `Working full stack on an existing crypto currency based lottery project for a Japanese client. Tech stack: Node.js (express, ejs, jquery, knex), MySQL`
+        ],
+      },
+    ],
+  },
+  {
     company: 'Nascenia Ltd.',
     location: 'Dhaka, Bangladesh',
     totalDuration: '1 year, 11 months',
