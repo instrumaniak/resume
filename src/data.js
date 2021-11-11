@@ -100,7 +100,7 @@ export const projectsData = [
     url: 'https://github.com/instrumaniak/local-library',
     tech: 'React, Express, Mongoose, MongoDB',
     details: ['A book management web app.'],
-  },
+  }, /*
   {
     title: 'Calendar',
     url: 'https://github.com/instrumaniak/calendar',
@@ -114,5 +114,5 @@ export const projectsData = [
     details: [
       'A static blog site that uses markdown files for posts & hosted on github pages.',
     ],
-  },
+  }, */
 ]
