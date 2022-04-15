@@ -6,18 +6,12 @@ import { headerData } from '../data'
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    alignItems: 'stretch',
+    alignItems: 'flex-end',
+    justifyContent: 'space-between',
+    marginBottom: 15,
   },
-  detailColumn: {
-    flexDirection: 'column',
-    flexGrow: 9,
-  },
-  linkColumn: {
-    flexDirection: 'column',
-    flexGrow: 2,
-    alignSelf: 'flex-end',
-    justifySelf: 'flex-end',
-  },
+  detailColumn: {},
+  linkColumn: {},
   name: {
     fontSize: 25,
     textTransform: 'uppercase',
@@ -50,6 +44,11 @@ export default () => (
     <View style={styles.detailColumn}>
       <Text style={styles.name}>{headerData.name}</Text>
       <Text style={styles.title}>{headerData.tagLine}</Text>
+    </View>
+    <View style={styles.linkColumn}>
+      {headerData.socialLinks.map((link) => (
+        <Link style={styles.link}>{link}</Link>
+      ))}
     </View>
     <View style={styles.linkColumn}>
       {headerData.links.map((link) => (

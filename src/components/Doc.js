@@ -14,7 +14,7 @@ import Header from './Header'
 import Education from './Education'
 import Experience from './Experience'
 import Skills from './Skills'
-import Projects from './Projects'
+// import Projects from './Projects'
 
 const styles = StyleSheet.create({
   page: {
@@ -75,7 +75,7 @@ const Resume = (props) => (
       </View>
       <View style={styles.rightColumn}>
         <Experience />
-        <Projects />
+        {/* <Projects /> */}
       </View>
     </View>
     <Text style={styles.footer}>

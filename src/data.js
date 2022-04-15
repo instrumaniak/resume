@@ -1,13 +1,10 @@
 export const headerData = {
   name: 'Raziur Rahman',
   tagLine: 'React / JavaScript developer',
-  links: [
-    '+880 167 226 3414',
-    'raziur.eee@gmail.com',
-    'Dhaka, Bangladesh',
-    ' ',
+  links: ['+880 167 226 3414', 'raziur.eee@gmail.com', 'Dhaka, Bangladesh'],
+  socialLinks: [
     'https://www.linkedin.com/in/raziur',
-    'https://instrumaniak.github.io',
+    // 'https://instrumaniak.github.io',
     'https://github.com/instrumaniak',
   ],
 }
@@ -23,7 +20,7 @@ export const techSkillsData = [
       'React Native',
       'GraphQL',
       'Node.js/Express/NestJS',
-      'MongoDB/PostgreSQL',
+      'MongoDB/MySQL',
       'Git',
       'Linux/Ubuntu',
     ],
@@ -50,7 +47,7 @@ export const experienceData = [
         details: [
           `Worked full stack on an existing lottery project for a Japanese client . Tech stack: Node.js (express, ejs, jquery, knex), MySQL`,
           `Worked full stack on a product catalog CMS built from scratch for a local client (a top electrical/electronics company): Tech stack: Frontend (store front/product catalog): Next.js/React, Backend (API & dashboard): Node.js( express, sequelize, ejs), MySQL.`,
-          `Working on a crypto-wallet mobile app for token (ERC20) sending/receiving for a USA client. Tech stack: React native/Expo.`
+          `Working on a crypto-wallet mobile app for token (ERC20) sending/receiving for a USA client. Tech stack: React native/Expo.`,
         ],
       },
     ],
@@ -102,7 +99,7 @@ export const projectsData = [
     url: 'https://github.com/instrumaniak/local-library',
     tech: 'React, Express, Mongoose, MongoDB',
     details: ['A book management web app.'],
-  }, /*
+  } /*
   {
     title: 'Calendar',
     url: 'https://github.com/instrumaniak/calendar',
@@ -116,5 +113,5 @@ export const projectsData = [
     details: [
       'A static blog site that uses markdown files for posts & hosted on github pages.',
     ],
-  }, */
+  }, */,
 ]
