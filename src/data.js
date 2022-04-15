@@ -42,13 +42,15 @@ export const experienceData = [
   {
     company: 'Silicon Orchard Ltd.',
     location: 'Dhaka, Bangladesh',
-    totalDuration: '',
+    totalDuration: '7 months+',
     positions: [
       {
         title: 'Software Engineer',
         date: 'September, 2021 - Present',
         details: [
-          `Working full stack on an existing crypto currency based lottery project for a Japanese client. Tech stack: Node.js (express, ejs, jquery, knex), MySQL`
+          `Worked full stack on an existing lottery project for a Japanese client . Tech stack: Node.js (express, ejs, jquery, knex), MySQL`,
+          `Worked full stack on a product catalog CMS built from scratch for a local client (a top electrical/electronics company): Tech stack: Frontend (store front/product catalog): Next.js/React, Backend (API & dashboard): Node.js( express, sequelize, ejs), MySQL.`,
+          `Working on a crypto-wallet mobile app for token (ERC20) sending/receiving for a USA client. Tech stack: React native/Expo.`
         ],
       },
     ],
@@ -87,7 +89,7 @@ export const experienceData = [
         title: 'Apprentice Software Engineer',
         date: 'April - June, 2018',
         details: [
-          `Ported their blog site (https://hifipublic.com) front end which was in Angular to React/Redux. Implemented dynamic meta data rendering from server side using Express/Node.js which was required for social media sharing.`,
+          `Ported their blog (wordpress with rest api) site front end which was in Angular to React/Redux.`,
         ],
       },
     ],
