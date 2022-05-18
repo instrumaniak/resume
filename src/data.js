@@ -19,7 +19,7 @@ export const techSkillsData = [
       'React/Redux',
       'React Native',
       'GraphQL',
-      'Node.js/Express/NestJS',
+      'Node.js/Express',
       'MongoDB/MySQL',
       'Git',
       'Linux/Ubuntu',
