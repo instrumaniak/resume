@@ -50,6 +50,9 @@ const styles = StyleSheet.create({
     alignItems: 'flex-end',
     justifySelf: 'flex-end',
   },
+  expTitle: {
+    marginBottom: 14,
+  },
   title: {
     fontSize: 11,
     color: 'black',
@@ -140,7 +143,7 @@ const ExperienceEntry = ({
 
 const Experience = () => (
   <View style={styles.container}>
-    <Title>Work Experience</Title>
+    <Title style={styles.expTitle}>Work Experience (4 Years+)</Title>
     {experienceData.map(
       ({ company, location, totalDuration, positions }, idx) => (
         <View

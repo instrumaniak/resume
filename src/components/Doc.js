@@ -78,10 +78,10 @@ const Resume = (props) => (
         {/* <Projects /> */}
       </View>
     </View>
-    <Text style={styles.footer}>
+    {/* <Text style={styles.footer}>
       This resume was made using JavaScript, React & React PDF! Source:{' '}
       <Link>http://github.com/instrumaniak/resume</Link>
-    </Text>
+    </Text> */}
   </Page>
 )
 

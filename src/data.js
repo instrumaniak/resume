@@ -1,10 +1,10 @@
 export const headerData = {
   name: 'Raziur Rahman',
-  tagLine: 'React / JavaScript developer',
+  tagLine: 'React / Node.js developer',
   links: ['+880 167 226 3414', 'raziur.eee@gmail.com', 'Dhaka, Bangladesh'],
   socialLinks: [
     'https://www.linkedin.com/in/raziur',
-    // 'https://instrumaniak.github.io',
+    'https://instrumaniak.github.io',
     'https://github.com/instrumaniak',
   ],
 }
@@ -39,7 +39,7 @@ export const experienceData = [
   {
     company: 'Silicon Orchard Ltd.',
     location: 'Dhaka, Bangladesh',
-    totalDuration: '7 months+',
+    totalDuration: '9 months+',
     positions: [
       {
         title: 'Software Engineer',

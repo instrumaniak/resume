@@ -9,8 +9,11 @@ const styles = StyleSheet.create({
   container: {
     marginBottom: 20,
     backgroundColor: '#f5f5f5',
-    paddingLeft: 10,
+    paddingLeft: 14,
     paddingTop: 10,
+  },
+  skillTitle: {
+    marginBottom: 6,
   },
   title: {
     fontFamily: 'Lato Bold',
@@ -40,7 +43,7 @@ const SkillEntry = ({ name, skills }) => (
 
 const Skills = () => (
   <View style={styles.container}>
-    <Title>Tech Skills</Title>
+    <Title style={styles.skillTitle}>Tech Skills</Title>
     {techSkillsData.map((data) => (
       <SkillEntry name={data.category} skills={data.skills} />
     ))}

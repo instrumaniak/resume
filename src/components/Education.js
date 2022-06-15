@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
 
 export default () => (
   <View style={styles.container}>
-    <Title>Formal Education</Title>
+    <Title>Education</Title>
     {educationData.map(({ degree, school, duration }) => (
       <>
         <Text style={styles.degree}>{degree}</Text>
