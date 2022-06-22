@@ -1,14 +1,6 @@
 import React from 'react'
 
-import {
-  Text,
-  Link,
-  Document,
-  Font,
-  Page,
-  StyleSheet,
-  View,
-} from '@react-pdf/renderer'
+import { Document, Font, Page, StyleSheet, View } from '@react-pdf/renderer'
 
 import Header from './Header'
 import Education from './Education'
