@@ -3,7 +3,7 @@ import React from 'react'
 import Title from './Title'
 import List, { Item } from './List'
 import { Text, View, StyleSheet } from '@react-pdf/renderer'
-import { experienceData } from '../data'
+import { experienceTitle, experienceData } from '../data'
 
 const styles = StyleSheet.create({
   container: {
@@ -143,7 +143,7 @@ const ExperienceEntry = ({
 
 const Experience = () => (
   <View style={styles.container}>
-    <Title style={styles.expTitle}>Work Experience (4 Years+)</Title>
+    <Title style={styles.expTitle}>{experienceTitle}</Title>
     {experienceData.map(
       ({ company, location, totalDuration, positions }, idx) => (
         <View
@@ -158,7 +158,7 @@ const Experience = () => (
             key={company + location}
           />
         </View>
-      )
+      ),
     )}
   </View>
 )

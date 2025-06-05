@@ -8,6 +8,9 @@ const styles = StyleSheet.create({
   container: {
     marginBottom: 10,
   },
+  itemContainer: {
+    marginBottom: 10,
+  },
   school: {
     fontFamily: 'Lato',
     fontSize: 10,
@@ -28,11 +31,11 @@ export default () => (
   <View style={styles.container}>
     <Title>Education</Title>
     {educationData.map(({ degree, school, duration }) => (
-      <>
+      <View style={styles.itemContainer}>
         <Text style={styles.degree}>{degree}</Text>
         <Text style={styles.school}>{school}</Text>
         <Text style={styles.candidate}>{duration}</Text>
-      </>
+      </View>
     ))}
   </View>
 )
