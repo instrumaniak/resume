@@ -80,7 +80,7 @@ const Resume = (props) => (
 const Output = () => (
   <Document
     author="Raziur Rahaman"
-    keywords="javascript, react, redux, express, nodejs, mongodb"
+    keywords="microservices, nodejs, javascript, typescript, express, nestjs, postgresql, mongodb, redis"
     subject="The resume of Raziur Rahman"
     title="Resume"
   >
