@@ -9,6 +9,8 @@ export const headerData = {
   ],
 }
 
+export const summaryText = `Senior Software Engineer with 7+ years building production backend systems in Node.js and TypeScript. Specialized in microservice architecture, event-driven systems and real-time applications across e-commerce, food delivery and other domains. Experienced with AWS, automated testing and full-stack development with a strong backend focus.`
+
 export const techSkillsData = [
   {
     category: '',
@@ -52,13 +54,13 @@ export const experienceData = [
   {
     company: 'TechnoNext Ltd.',
     location: 'Dhaka, Bangladesh',
-    totalDuration: '2 years+',
+    totalDuration: '3 years+',
     positions: [
       {
         title: 'Sr. Software Engineer',
         date: 'April, 2023 - Present',
         details: [
-          `Worked on a variety of projects like: Multi-vendor ecommerce, food delivery, health-tourism. Using micro-service architecture, developed Rest APIs, integrated 3rd party payment service APIs, real-time chat-system.`,
+          `Worked on a variety of projects like: Multi-vendor e-commerce, food delivery, health-tourism. Using micro-service architecture, developed Rest APIs, integrated 3rd party payment service APIs, real-time chat-system.`,
           `Overall tech: Node.js, JavaScript/Typescript, Express, socket.io, Kafka, gRPC, Redis, Mongodb, PostgreSQL, Elastic Stack`,
         ],
       },

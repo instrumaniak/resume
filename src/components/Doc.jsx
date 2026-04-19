@@ -3,6 +3,7 @@ import React from 'react'
 import { Document, Font, Page, StyleSheet, View } from '@react-pdf/renderer'
 
 import Header from './Header'
+import Summary from './Summary'
 import Education from './Education'
 import Experience from './Experience'
 import Skills from './Skills'
@@ -57,6 +58,7 @@ Font.register({
 const Resume = (props) => (
   <Page {...props} style={styles.page}>
     <Header />
+    <Summary />
     <View style={styles.container}>
       <View style={styles.leftColumn}>
         <Skills />
