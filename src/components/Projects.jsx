@@ -15,7 +15,8 @@ const styles = StyleSheet.create({
   },
   url: {
     fontSize: 11,
-    fontFamily: 'Lato Italic',
+    fontFamily: 'Lato',
+    fontStyle: 'italic',
     marginBottom: 5,
   },
   detailContainer: {
@@ -55,11 +56,13 @@ const styles = StyleSheet.create({
     fontSize: 11,
     color: 'black',
     textDecoration: 'none',
-    fontFamily: 'Lato Bold',
+    fontFamily: 'Lato',
+    fontWeight: 'bold',
   },
   tech: {
     fontSize: 10,
-    fontFamily: 'Lato Italic',
+    fontFamily: 'Lato',
+    fontStyle: 'italic',
   },
 })
 

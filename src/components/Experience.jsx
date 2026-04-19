@@ -15,7 +15,8 @@ const styles = StyleSheet.create({
   },
   date: {
     fontSize: 11,
-    fontFamily: 'Lato Italic',
+    fontFamily: 'Lato',
+    fontStyle: 'italic',
   },
   detailContainer: {
     flexDirection: 'row',
@@ -57,7 +58,8 @@ const styles = StyleSheet.create({
     fontSize: 11,
     color: 'black',
     textDecoration: 'none',
-    fontFamily: 'Lato Bold',
+    fontFamily: 'Lato',
+    fontWeight: 'bold',
   },
 
   companyPositionsContainer: {
@@ -76,11 +78,13 @@ const styles = StyleSheet.create({
   companyTitle: {
     fontSize: 12,
     color: 'black',
-    fontFamily: 'Lato Bold',
+    fontFamily: 'Lato',
+    fontWeight: 'bold',
   },
   totalDuration: {
     fontSize: 12,
-    fontFamily: 'Lato Italic',
+    fontFamily: 'Lato',
+    fontStyle: 'italic',
   },
 })
 

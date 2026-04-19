@@ -30,31 +30,28 @@ const styles = StyleSheet.create({
   },
   footer: {
     fontSize: 8,
-    fontFamily: 'Lato Italic',
+    fontFamily: 'Lato',
+    fontStyle: 'italic',
     textAlign: 'center',
     color: '#666',
   },
 })
 
 Font.register({
-  family: 'Open Sans',
-  src: `/fonts/Open_Sans/OpenSans-Regular.ttf`,
-})
-Font.register({
   family: 'Lato',
-  src: `/fonts/Lato/Lato-Regular.ttf`,
+  fonts: [
+    { src: '/fonts/Lato/Lato-Regular.ttf' },
+    { src: '/fonts/Lato/Lato-Bold.ttf', fontWeight: 'bold' },
+    { src: '/fonts/Lato/Lato-Italic.ttf', fontStyle: 'italic' },
+    { src: '/fonts/Lato/Lato-Light.ttf', fontWeight: 300 },
+  ],
 })
+
 Font.register({
-  family: 'Lato Italic',
-  src: `/fonts/Lato/Lato-Italic.ttf`,
-})
-Font.register({
-  family: 'Lato Bold',
-  src: `/fonts/Lato/Lato-Bold.ttf`,
-})
-Font.register({
-  family: 'Lato Light',
-  src: `/fonts/Lato/Lato-Light.ttf`,
+  family: 'Open Sans',
+  fonts: [
+    { src: '/fonts/Open_Sans/OpenSans-Regular.ttf' },
+  ],
 })
 
 const Resume = (props) => (

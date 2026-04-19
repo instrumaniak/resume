@@ -16,7 +16,8 @@ const styles = StyleSheet.create({
     marginBottom: 6,
   },
   title: {
-    fontFamily: 'Lato Bold',
+    fontFamily: 'Lato',
+    fontWeight: 'bold',
     fontSize: 11,
     marginBottom: 10,
   },

@@ -17,12 +17,14 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
   degree: {
-    fontFamily: 'Lato Bold',
+    fontFamily: 'Lato',
+    fontWeight: 'bold',
     fontSize: 10,
     marginBottom: 5,
   },
   candidate: {
-    fontFamily: 'Lato Italic',
+    fontFamily: 'Lato',
+    fontStyle: 'italic',
     fontSize: 10,
   },
 })
