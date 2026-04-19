@@ -15,12 +15,14 @@ export const techSkillsData = [
     skills: [
       'Node.js',
       'JavaScript/TypeScript',
-      'Express/Nestjs',
-      'Python',
+      'Express/NestJS',
+      'Jest/Supertest/Playwright',
       'PostgreSQL/MySQL',
       'Redis/MongoDB',
-      'Git',
+      'Kafka/gRPC',
+      'AWS(EC2, S3)',
       'Docker',
+      'Git',
       'Linux/Ubuntu',
     ],
   },
@@ -100,18 +102,16 @@ export const experienceData = [
     positions: [
       {
         title: 'Software Engineer',
-        date: 'Jully, 2018 - Jully, 2019',
+        date: 'July, 2018 - July, 2019',
         details: [
-          `Ported the React/Redux frontend of their blog site to NextJS/React for full server side rendering with caching support in the Express/Node.js & improved SEO. Deployed it to AWS EC2.`,
-          `Worked on some of their client's projects using these tech: React, Redux, React Native, Express, Node.js`,
+          `Migrated blog frontend from React/Redux to Next.js, adding SSR and caching via Express/Node.js, improving SEO. Deployed to AWS EC2.`,
+          `Delivered client projects using React, Redux, React Native, Express and Node.js.`,
         ],
       },
       {
         title: 'Apprentice Software Engineer',
         date: 'April - June, 2018',
-        details: [
-          `Ported their blog (wordpress with rest api) site front end which was in Angular to React/Redux.`,
-        ],
+        details: [`Ported blog frontend from Angular to React/Redux.`],
       },
     ],
   },
