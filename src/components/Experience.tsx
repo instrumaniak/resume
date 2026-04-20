@@ -1,5 +1,6 @@
 import React from 'react'
 
+import type { ExperienceItem, ExperienceEntryProps } from '../types'
 import Title from './Title'
 import List, { Item } from './List'
 import { Text, View, StyleSheet } from '@react-pdf/renderer'
@@ -68,6 +69,9 @@ const styles = StyleSheet.create({
     paddingLeft: 8,
     paddingTop: 5,
   },
+  companyContainer: {
+    marginBottom: 10,
+  },
   companyTitleContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -88,7 +92,12 @@ const styles = StyleSheet.create({
   },
 })
 
-const CompanyEntry = ({ company, location, totalDuration, positions }) => {
+const CompanyEntry = ({
+  company,
+  location,
+  totalDuration,
+  positions,
+}: ExperienceItem) => {
   return (
     <View style={styles.companyContainer}>
       <View style={styles.companyTitleContainer}>
@@ -105,6 +114,7 @@ const CompanyEntry = ({ company, location, totalDuration, positions }) => {
             location={location}
             date={position.date}
             details={position.details}
+            title={position.title}
             position={position.title}
             key={idx}
             isLast={positions.length - 1 === idx}
@@ -122,7 +132,7 @@ const ExperienceEntry = ({
   position,
   date,
   isLast,
-}) => {
+}: ExperienceEntryProps) => {
   return (
     <View style={[styles.entryContainer, isLast ? { marginBottom: 0 } : {}]}>
       <View style={styles.headerContainer}>

@@ -1,4 +1,12 @@
-export const headerData = {
+import type {
+  HeaderData,
+  TechSkillCategory,
+  EducationItem,
+  ExperienceItem,
+  ProjectItem,
+} from './types'
+
+export const headerData: HeaderData = {
   name: 'Raziur Rahman',
   tagLine: 'Sr. Software Engineer',
   links: ['+880 167 226 3414', 'contact@raziur.com', 'Dhaka, Bangladesh'],
@@ -9,9 +17,9 @@ export const headerData = {
   ],
 }
 
-export const summaryText = `Senior Software Engineer with 7+ years building production backend systems in Node.js and TypeScript. Specialized in microservice architecture, event-driven systems and real-time applications across e-commerce, food delivery and other domains. Experienced with AWS, automated testing and full-stack development with a strong backend focus.`
+export const summaryText: string = `Senior Software Engineer with 7+ years building production backend systems in Node.js and TypeScript. Specialized in microservice architecture, event-driven systems and real-time applications across e-commerce, food delivery and other domains. Experienced with AWS, automated testing and full-stack development with a strong backend focus.`
 
-export const techSkillsData = [
+export const techSkillsData: TechSkillCategory[] = [
   {
     category: '',
     skills: [
@@ -30,7 +38,7 @@ export const techSkillsData = [
   },
 ]
 
-export const educationData = [
+export const educationData: EducationItem[] = [
   {
     degree: `BSc | EEE`,
     school: `Ahsanullah University of Science and Technology, Dhaka, Bangladesh`,
@@ -48,9 +56,9 @@ export const educationData = [
   },
 ]
 
-export const experienceTitle = 'Work Experience (7 Years+)'
+export const experienceTitle: string = 'Work Experience (7 Years+)'
 
-export const experienceData = [
+export const experienceData: ExperienceItem[] = [
   {
     company: 'TechnoNext Ltd.',
     location: 'Dhaka, Bangladesh',
@@ -119,7 +127,7 @@ export const experienceData = [
   },
 ]
 
-export const projectsData = [
+export const projectsData: ProjectItem[] = [
   {
     title: 'Local Library',
     url: 'https://github.com/instrumaniak/local-library',

@@ -2,6 +2,15 @@ import React from 'react';
 
 import { Text, View, StyleSheet } from '@react-pdf/renderer'
 
+interface ListProps {
+  children: React.ReactNode
+}
+
+interface ItemProps {
+  children: React.ReactNode
+  style?: any
+}
+
 const styles = StyleSheet.create({
   item: {
     flexDirection: 'row',
@@ -20,10 +29,10 @@ const styles = StyleSheet.create({
   },
 });
 
-const List = ({ children }) => children;
+const List = ({ children }: ListProps) => children
 
-export const Item = ({ children }) => (
-  <View style={styles.item}>
+export const Item = ({ children, style }: ItemProps) => (
+  <View style={[styles.item, style]}>
     <Text style={styles.bulletPoint}>•</Text>
     <Text style={styles.itemContent}>{children}</Text>
   </View>
