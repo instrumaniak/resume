@@ -50,10 +50,11 @@ Font.register({
 
 Font.register({
   family: 'Open Sans',
-  fonts: [
-    { src: '/fonts/Open_Sans/OpenSans-Regular.ttf' },
-  ],
+  fonts: [{ src: '/fonts/Open_Sans/OpenSans-Regular.ttf' }],
 })
+
+// disable word hyphenation
+Font.registerHyphenationCallback((word) => [word])
 
 const Resume = (props) => (
   <Page {...props} style={styles.page}>

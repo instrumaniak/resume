@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 import { Text, View, StyleSheet } from '@react-pdf/renderer'
 
@@ -20,6 +20,7 @@ const styles = StyleSheet.create({
     width: 10,
     fontSize: 12,
     //fontFamily: 'Lato',
+    color: '#666',
   },
   itemContent: {
     flex: 1,
@@ -27,7 +28,7 @@ const styles = StyleSheet.create({
     fontSize: 10,
     fontFamily: 'Lato',
   },
-});
+})
 
 const List = ({ children }: ListProps) => children
 
@@ -36,6 +37,6 @@ export const Item = ({ children, style }: ItemProps) => (
     <Text style={styles.bulletPoint}>•</Text>
     <Text style={styles.itemContent}>{children}</Text>
   </View>
-);
+)
 
-export default List;
+export default List

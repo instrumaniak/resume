@@ -5,6 +5,7 @@ import Title from './Title'
 import List, { Item } from './List'
 import { Text, View, StyleSheet } from '@react-pdf/renderer'
 import { experienceTitle, experienceData } from '../data'
+import { parseMarkdown } from '../utils/parseMarkdown'
 
 const styles = StyleSheet.create({
   container: {
@@ -147,7 +148,7 @@ const ExperienceEntry = ({
       <List>
         {details.map((detail, i) => (
           <Item key={i} style={styles.detailContainer}>
-            {detail}
+            {parseMarkdown(detail)}
           </Item>
         ))}
       </List>
