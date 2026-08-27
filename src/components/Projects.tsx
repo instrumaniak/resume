@@ -1,5 +1,6 @@
 import React from 'react'
 
+import type { ProjectItem } from '../types'
 import Title from './Title'
 import List, { Item } from './List'
 import { Text, View, StyleSheet, Link } from '@react-pdf/renderer'
@@ -66,7 +67,7 @@ const styles = StyleSheet.create({
   },
 })
 
-const ProjectEntry = ({ title, tech, details, url }) => {
+const ProjectEntry = ({ title, tech, details, url }: ProjectItem) => {
   return (
     <View style={styles.entryContainer}>
       <View style={styles.headerContainer}>

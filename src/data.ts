@@ -1,4 +1,12 @@
-export const headerData = {
+import type {
+  HeaderData,
+  TechSkillCategory,
+  EducationItem,
+  ExperienceItem,
+  ProjectItem,
+} from './types'
+
+export const headerData: HeaderData = {
   name: 'Raziur Rahman',
   tagLine: 'Sr. Software Engineer',
   links: ['+880 167 226 3414', 'contact@raziur.com', 'Dhaka, Bangladesh'],
@@ -9,16 +17,17 @@ export const headerData = {
   ],
 }
 
-export const summaryText = `Senior Software Engineer with 7+ years building production backend systems in Node.js and TypeScript. Specialized in microservice architecture, event-driven systems and real-time applications across e-commerce, food delivery and other domains. Experienced with AWS, automated testing and full-stack development with a strong backend focus.`
+export const summaryText: string = `Senior Software Engineer with _8+ years_ building *production systems* in *Node.js, TypeScript & React*. Specialized in microservice architecture, event-driven systems and real-time applications across e-commerce, food delivery and other domains. Experienced with full-stack development, automated testing and cloud deployment with a strong **backend** focus.`
 
-export const techSkillsData = [
+export const techSkillsData: TechSkillCategory[] = [
   {
     category: '',
     skills: [
       'Node.js',
       'JavaScript/TypeScript',
       'Express/NestJS',
-      'Jest/Supertest/Playwright',
+      'React/React Native',
+      'Jest/Supertest',
       'PostgreSQL/MySQL',
       'Redis/MongoDB',
       'Kafka/gRPC',
@@ -26,11 +35,12 @@ export const techSkillsData = [
       'Docker',
       'Git',
       'Linux/Ubuntu',
+      'C/C++',
     ],
   },
 ]
 
-export const educationData = [
+export const educationData: EducationItem[] = [
   {
     degree: `BSc | EEE`,
     school: `Ahsanullah University of Science and Technology, Dhaka, Bangladesh`,
@@ -48,20 +58,20 @@ export const educationData = [
   },
 ]
 
-export const experienceTitle = 'Work Experience (7 Years+)'
+export const experienceTitle: string = 'Work Experience (8 Years+)'
 
-export const experienceData = [
+export const experienceData: ExperienceItem[] = [
   {
     company: 'TechnoNext Ltd.',
     location: 'Dhaka, Bangladesh',
-    totalDuration: '3 years+',
+    totalDuration: '3 years, 1 month',
     positions: [
       {
         title: 'Sr. Software Engineer',
-        date: 'April, 2023 - Present',
+        date: 'April, 2023 - April, 2026',
         details: [
-          `Worked on a variety of projects like: Multi-vendor e-commerce, food delivery, health-tourism. Using micro-service architecture, developed Rest APIs, integrated 3rd party payment service APIs, real-time chat-system.`,
-          `Overall tech: Node.js, JavaScript/Typescript, Express, socket.io, Kafka, gRPC, Redis, Mongodb, PostgreSQL, Elastic Stack`,
+          `Projects of *US-Bangla Group*: Multi-vendor e-commerce (_Cartup_), food delivery (_Foodi_). Using micro-service architecture, developed Rest APIs, integrated 3rd party payment service APIs, real-time chat & notification system.`,
+          `Tech: Node.js, JavaScript/Typescript, Express, socket.io, React Native, Kafka, gRPC, Redis, Mongodb, PostgreSQL, Elastic Stack`,
         ],
       },
     ],
@@ -69,14 +79,14 @@ export const experienceData = [
   {
     company: 'Silicon Orchard Ltd.',
     location: 'Dhaka, Bangladesh',
-    totalDuration: '1 year 8 months',
+    totalDuration: '1 year, 8 months',
     positions: [
       {
         title: 'Software Engineer',
         date: 'September, 2021 - April, 2023',
         details: [
-          `Worked on an existing lottery project. Tech stack: Node.js (express, ejs, jquery, knex), MySQL`,
-          `Worked on a product catalog CMS built from scratch. Tech stack: Node.js( express, sequelize, ejs), MySQL.`,
+          `Projects: crypto lottery, product catalog CMS, crypto wallet app`,
+          `Tech: Node.js, Express, Sequelize, MySQL, React, React Native(Expo)`,
         ],
       },
     ],
@@ -106,20 +116,22 @@ export const experienceData = [
         title: 'Software Engineer',
         date: 'July, 2018 - July, 2019',
         details: [
-          `Migrated blog frontend from React/Redux to Next.js, adding SSR and caching via Express/Node.js, improving SEO. Deployed to AWS EC2.`,
+          `Migrated _HiFi Public_ website frontend from React/Redux to Next.js, adding SSR and caching via Express/Node.js, improving SEO. Deployed to AWS EC2.`,
           `Delivered client projects using React, Redux, React Native, Express and Node.js.`,
         ],
       },
       {
         title: 'Apprentice Software Engineer',
         date: 'April - June, 2018',
-        details: [`Ported blog frontend from Angular to React/Redux.`],
+        details: [
+          `Ported _HiFi Public_ website frontend from Angular to React/Redux.`,
+        ],
       },
     ],
   },
 ]
 
-export const projectsData = [
+export const projectsData: ProjectItem[] = [
   {
     title: 'Local Library',
     url: 'https://github.com/instrumaniak/local-library',
